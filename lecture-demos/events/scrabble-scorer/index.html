@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <p>Select a scoring ruleset:</p>
+
+    <div>
+    <input type="radio" id="simpleScore" name="score" value="Simple Score" checked>
+    <label for="simpleScore">Simple Score</label>
+    </div>
+
+    <div>
+    <input type="radio" id="vowelBonusScore" name="score" value="Vowel Bonus Score">
+    <label for="vowelBonusScore">Vowel Bonus Score</label>
+    </div>
+
+    <div>
+    <input type="radio" id="scrabbleScore" name="score" value="Scrabble Score">
+    <label for="scrabbleScore">Scrabble Score</label>
+    </div>
+
+    <p>Enter a word:</p>
+    <input id="user-word" type="text" />
+    <input id="score-button" type="button" value="Score"></button>
+
+    <p id="score-paragraph"></p>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!doctype>
+<html>
+    <head>
+        <title>Inline JS Example</title>
+    </head>
+    <body>
+    <h1>Inline JS Example</h1>
+    <p>This file has an inline JS example.</p>
+    <p>On file load the HTML &ltscript&gt tag is executed.</p>
+    <p>Which will bring up an alert window with a greeting and a random number between 1 and 10.</p>
+    <p>The inline JS executes once, so after dismissing the alert box you will need to refresh the page to see it again.</p>
+
+    <script>
+        // declraing a couple of functions:
+        function randomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+        function rollDie(sides) {
+            return randomInt(1, sides + 1);
+        }
+
+        // declaring a couple of variables
+        let firstName = "Paul";
+        let lastName = "Matthews";
+
+        // calling the alert(alertMessage) function to create an alert window in HTML. The argument is the message that will be displayed.
+        alert(`Hello ${firstName} ${lastName}. Your random number is: ${rollDie(10)}.`);
+    </script>
+    </body>
+
+</html>

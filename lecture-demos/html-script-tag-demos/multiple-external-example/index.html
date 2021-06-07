@@ -1,0 +1,16 @@
+<!doctype>
+<html>
+    <head>
+        <title>Multiple External JS Example</title>
+        <!-- You can load a JS file into the <head> of an HTML document, this will cause the JS to execute before the HTML elements defined in the <body> render. Take note as to when the alert box pops up. -->
+        <script src="./one.js"></script>
+    </head>
+    <body>
+        <h1>Multiple External JS Example</h1>
+        <p>You can load as many JS files as you need to.</p>
+        <p>However, the order in which you load the files <b>matters</b>.</p>
+        <!-- Try swapping the order of the <script> tags to see how the order is respected: -->
+        <script src="./two.js"></script>
+        <script src="./three.js"></script>
+    </body>
+</html>
